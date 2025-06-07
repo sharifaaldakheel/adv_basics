@@ -9,8 +9,10 @@ class AnswerBtn extends StatelessWidget {
   @override
   Widget build(context) {
     return ElevatedButton(
+
       onPressed: onTap,
       style: ElevatedButton.styleFrom(
+        backgroundColor: const Color.fromARGB(255, 20, 73, 117),
         padding: const EdgeInsets.symmetric(vertical: 16),
         
       ),
@@ -20,6 +22,7 @@ class AnswerBtn extends StatelessWidget {
       style: GoogleFonts.tajawal(
         fontSize: 16,
         fontWeight: FontWeight.w600,
+        color:  Color.fromARGB(255, 248, 249, 250),
       ),
       ),
     );

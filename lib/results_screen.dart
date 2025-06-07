@@ -42,23 +42,39 @@ class ResultsScreen extends StatelessWidget {
     return SizedBox(
       width: double.infinity,
       child: Container(
-        margin: const EdgeInsets.all(25),
+        margin: const EdgeInsets.all(20),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            const SizedBox(height: 100),
+
             Text(
               'You got $correctAnswers out of $totalQuestions right!',
-              maxLines: 3,
               textAlign: TextAlign.center,
               style: GoogleFonts.tajawal(
                 fontWeight: FontWeight.bold,
-                fontSize: 18,
+                fontSize: 22,
+                color:Color.fromARGB(255, 36, 98, 148),
               ),
             ),
-            SizedBox(height: 40),
+                                                SizedBox(height:20),
+
             QuestionsSummary(summaryData),
-            ElevatedButton(onPressed:onRestart,
-            child: Text('Restart Quiz')),
+                                                SizedBox(height:40),
+
+            ElevatedButton.icon(onPressed:onRestart,
+            style: ElevatedButton.styleFrom(
+              backgroundColor: const Color.fromARGB(255, 65, 164, 244),
+              foregroundColor: const Color.fromARGB(255, 248, 249, 250),
+              padding: const EdgeInsets.symmetric(horizontal: 40),
+            ),
+            icon:Icon(Icons.restart_alt_rounded),
+            label: Text(
+              'Retart Quiz',
+              style: const TextStyle(fontSize: 20, fontFamily: 'Tajawal'),
+              ),
+            ),
+
           ],
         ),
       ),

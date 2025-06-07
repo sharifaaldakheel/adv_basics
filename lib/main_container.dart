@@ -19,12 +19,14 @@ class MainContainer extends StatelessWidget {
         mainAxisSize: MainAxisSize.min,
         children: [
           Image.asset('assets/question.png'),
+                    const SizedBox(height: 40),
+
           Text(
             'Start Learning Flutter',
             style: const TextStyle(
               fontSize: 24,
               fontWeight: FontWeight.bold,
-              color: Color.fromARGB(255, 111, 90, 135),
+              color: Color.fromARGB(255, 50, 133, 201),
               fontFamily: 'Tajawal',
             ),
           ),
@@ -36,8 +38,8 @@ class MainContainer extends StatelessWidget {
             },
             style: ElevatedButton.styleFrom(
               padding: const EdgeInsets.symmetric(horizontal: 40),
-              backgroundColor: Color.fromARGB(255, 5, 115, 179),
-              foregroundColor: Color.fromARGB(255, 238, 238, 238),
+              backgroundColor: Color.fromARGB(255, 65, 164, 244),
+              foregroundColor: Color.fromARGB(255, 248, 249, 250),
             ),
             icon:Icon(Icons.arrow_right_alt_rounded),
             label: Text(

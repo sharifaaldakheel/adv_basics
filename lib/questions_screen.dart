@@ -28,7 +28,7 @@ class _QuestionsScreenState extends State<QuestionsScreen> {
   Widget build(context) {
     final currentQuestion = questions[currentQuestionIndex];
  return Scaffold(
-    backgroundColor: Color.fromARGB(255, 255, 249, 241),
+    backgroundColor: Color.fromARGB(255, 223, 241, 255),
     body: Center(
       child: SingleChildScrollView(
         child: Container(
@@ -52,7 +52,7 @@ class _QuestionsScreenState extends State<QuestionsScreen> {
               Text(
                 currentQuestion.text,
                 style: GoogleFonts.tajawal(
-                  color: Color.fromARGB(255, 5, 115, 179),
+                  color: Color.fromARGB(255, 47, 124, 187),
                   fontSize: 22,
                   fontWeight: FontWeight.bold,
                 ),

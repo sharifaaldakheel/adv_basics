@@ -45,7 +45,7 @@ class _QuizState extends State<Quiz> {
   void restartQuiz() {
   setState(() {
     selectedAnswer = [];
-    activeScreen = 'questions-screen';
+    activeScreen = 'start-screen';
   });
 }
 
@@ -68,7 +68,7 @@ class _QuizState extends State<Quiz> {
       home: Scaffold(
         body: Container(
           decoration: const BoxDecoration(
-            color: Color.fromARGB(255, 255, 249, 241),
+            color: Color.fromARGB(255, 255, 255, 255),
           ),
           child: screenWidget,
         ),
